@@ -1,0 +1,3 @@
+# Put in here whichever framework is supported.
+# run >carthage update --platform iOS
+github "Alamofire/Alamofire" ~> 4.7

@@ -6,8 +6,22 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3D239C492137237800D22FF5 /* CarthagePlayground */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3D239C4C2137237800D22FF5 /* Build configuration list for PBXAggregateTarget "CarthagePlayground" */;
+			buildPhases = (
+				3D239C4D2137238700D22FF5 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = CarthagePlayground;
+			productName = CarthagePlayground;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXFileReference section */
-		3D239C482137220400D22FF5 /* FrameworkPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FrameworkPlayground.playground; sourceTree = "<group>"; };
+		3D239C482137220400D22FF5 /* FrameworkPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FrameworkPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -25,6 +39,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					3D239C492137237800D22FF5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
 			};
 			buildConfigurationList = 3D239C452137216F00D22FF5 /* Build configuration list for PBXProject "CarthagePlayground" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -37,9 +56,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3D239C492137237800D22FF5 /* CarthagePlayground */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D239C4D2137238700D22FF5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -rv \"${SRCROOT}/Carthage/Build/iOS/\" \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		3D239C462137216F00D22FF5 /* Debug */ = {
@@ -54,6 +90,24 @@
 			};
 			name = Release;
 		};
+		3D239C4A2137237800D22FF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BD2TPDQG5D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D239C4B2137237800D22FF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BD2TPDQG5D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -62,6 +116,15 @@
 			buildConfigurations = (
 				3D239C462137216F00D22FF5 /* Debug */,
 				3D239C472137216F00D22FF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D239C4C2137237800D22FF5 /* Build configuration list for PBXAggregateTarget "CarthagePlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D239C4A2137237800D22FF5 /* Debug */,
+				3D239C4B2137237800D22FF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

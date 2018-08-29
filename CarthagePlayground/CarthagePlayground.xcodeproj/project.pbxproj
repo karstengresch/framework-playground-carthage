@@ -6,10 +6,15 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXFileReference section */
+		3D239C482137220400D22FF5 /* FrameworkPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FrameworkPlayground.playground; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		3D239C412137216F00D22FF5 = {
 			isa = PBXGroup;
 			children = (
+				3D239C482137220400D22FF5 /* FrameworkPlayground.playground */,
 			);
 			sourceTree = "<group>";
 		};
